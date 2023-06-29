@@ -340,6 +340,9 @@ body {
   }
 }
 @media (any-hover: hover) {
+  .social__link:hover {
+    filter: drop-shadow(3px 3px 3px rgba(3, 235, 243, 0.8));
+  }
   .social__link:hover::before {
     color: #fff;
   }

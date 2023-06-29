@@ -31,7 +31,7 @@
         // filter: drop-shadow(3px 3px 3px rgba(3, 235, 243, 0.6));
         @media (any-hover: hover) {
             &:hover {
-                // filter: drop-shadow(3px 3px 3px rgba(3, 235, 243, 0));
+                filter: drop-shadow(3px 3px 3px rgba(3, 235, 243, 0.8));
                 &::before {
                     color: #fff;
                 }
