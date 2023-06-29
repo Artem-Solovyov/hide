@@ -1,0 +1,45 @@
+// Settings
+$minWidth: 320;
+$maxWidthContainer: 1810;
+$containerPadding: 110;
+
+$tablet: em(767.98);
+
+$mobile: em(479.98);
+
+//colors
+$mainDarkColor: #1c1f25;
+$textDarcColor: #212121;
+
+[class*="__container"] {
+    max-width: rem($maxWidthContainer);
+    box-sizing: content-box;
+    margin: 0 auto;
+    @include adaptive-value("padding-left", 25, 10, 1, 320, 768);
+    @include adaptive-value("padding-right", 25, 10, 1, 320, 768);
+    @media (min-width: $tablet) {
+        padding: 0 rem(math.div($containerPadding, 2));
+    }
+
+    @media (max-width: em(1920)) and (min-width: em(767.98)) {
+        @include adaptive-value("padding-left", 55, 25, 1, 768);
+        @include adaptive-value("padding-right", 55, 25, 1, 768);
+    }
+    @media (max-width: em(768)) {
+    }
+}
+
+body {
+    font-family: "ClashGrotesk";
+    font-weight: 500;
+    font-size: rem(16);
+    overflow-x: hidden;
+    background-color: #1b1b1b;
+    color: #f0f8f7;
+}
+.wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    // display: flex;
+    // align-items: center;
+}

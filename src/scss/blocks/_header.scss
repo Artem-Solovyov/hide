@@ -1,0 +1,41 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    @include adaptive-value("padding-top", 17, 25, 1);
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        @include adaptive-value("width", 152, 138, 1, 320, 768);
+        @include adaptive-value("heigth", 28, 26, 1, 320, 768);
+    }
+
+    &__social {
+    }
+}
+.social {
+    display: flex;
+    align-items: center;
+    @include adaptive-value("column-gap", 32, 24, 1, 320, 768);
+    &__link {
+        display: flex;
+        align-items: center;
+        @include adaptive-value("font-size", 32, 24, 1, 320, 768);
+        transition: filter 0.3s ease;
+        // filter: drop-shadow(3px 3px 3px rgba(3, 235, 243, 0.6));
+        @media (any-hover: hover) {
+            &:hover {
+                // filter: drop-shadow(3px 3px 3px rgba(3, 235, 243, 0));
+                &::before {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

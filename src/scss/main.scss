@@ -1,0 +1,13 @@
+@use "sass:math";
+
+// base
+@import "./base/reset";
+@import "./base/av";
+@import "./base/base";
+
+// fonts
+@import "./fonts/fonts";
+
+//blocks
+@import "./blocks/header";
+@import "./blocks/main-block";
