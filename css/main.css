@@ -325,7 +325,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 2rem;
-  transition: filter 0.3s ease;
+  transition: filter 0.2s ease;
 }
 @media (max-width: 20em) {
   .social__link {
